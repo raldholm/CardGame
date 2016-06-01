@@ -8,17 +8,38 @@ namespace CardGame
 {
     class Card
     {
-        public string Suit { get; set; }
-        public string Value { get; set; }
-        public Card(string suit, string value)
-        {
-            this.Suit = suit;
-            this.Value = value;
-        }
+        private Suit Suit { get; set; }
+        private int Value { get; set; }
 
-        public override string ToString()
+        public Card(Suit suit, int value)
         {
-            return Value + " of " + Suit;
+            Suit = suit;
+            Value = value;
         }
     }
+
+    public enum Suit
+    {
+        Hearts = 1,
+        Clubs = 2,
+        Diamonds = 3,
+        Spades = 4
+    }
+    public enum Value : int
+    {
+        Ace = 1,
+        Deuce = 2,
+        Three = 3,
+        Four = 4,
+        Five = 5,
+        Six = 6,
+        Seven = 7,
+        Eight = 8,
+        Nine = 9,
+        Ten = 10,
+        Jack = 11,
+        Queen = 12,
+        King = 13
+    }
+
 }

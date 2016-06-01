@@ -8,36 +8,15 @@ namespace CardGame
 {
     class Deck
     {
-        public enum Suit : int
-        {
-            Hearts = 0,
-            Clubs = 1,
-            Diamonds = 2,
-            Spades = 3,
-
-        }
-        public enum Value : int
-        {
-            Ace = 0,
-            Two = 1,
-            Three = 2,
-            Four = 3,
-            Five = 4,
-            Six = 5,
-            Seven = 6,
-            Eight = 7,
-            Nine = 8,
-            Ten = 9,
-            Jack = 10,
-            Queen = 11,
-            King = 12
-        }
+        private Card[] cards;
 
         public void CreateAndSortDeck()
         {
+            cards = new Card[52];
+            var index = 0;
+
             //todo:
-            
-             
+
             /* 
              * Sortering skall sortera korten i kortspelet enligt färg och valör: 
              * Hjärter(Ess,2,3 ... Kung), ruter, klöver och spader.
@@ -46,22 +25,21 @@ namespace CardGame
              */
         }
 
-        public void DrawCard()
+        public void TakeCard()
         {
             // todo:
-
 
             /*
              * Dra kort skall visa det översta kortet i kortspelet tills dess att alla kort är dragna.
              * Alla kort ska kunna visas.
              *  
              */
+            
         }
 
-        public void ShuffleDeck()
+        public void Shuffle()
         {
             // todo:
-
 
             /*
              * Blandning av korten skall lägga korten i kortspelet i slumpvis ordning.
