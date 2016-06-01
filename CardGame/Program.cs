@@ -9,8 +9,10 @@ namespace CardGame
     {
         static void Main(string[] args)
         {
-            Deck deck = new Deck();
+            DeckOfCards cardDeck = new DeckOfCards();
             
+            Console.Write("{0,-19}", cardDeck.getDeck());
+
         }
         
         // Kortleken skall bestå av valbart antal kortlekar.

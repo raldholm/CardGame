@@ -8,13 +8,9 @@ namespace CardGame
 {
     class Deck
     {
-        private Card[] cards;
-
         public void CreateAndSortDeck()
         {
-            cards = new Card[52];
-            var index = 0;
-
+         
             //todo:
 
             /* 
@@ -46,5 +42,17 @@ namespace CardGame
              *             
              */
         }
+        //public static List<Card> NewDeck()
+        //{
+        //    List<Card> newDeck = new List<Card>();
+        //    foreach (Card  in Enum.GetValues(typeof(Card)))
+        //    {
+        //        foreach (Card.Suit suit in Enum.GetValues(typeof(Card.Suit)))
+        //        {
+        //            newDeck.Add(new Card(suit, rank));
+        //        }
+        //    }
+        //    return newDeck;
+        //}
     }
 }
